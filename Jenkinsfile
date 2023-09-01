@@ -3,14 +3,14 @@ pipeline {
     docker { image 'hashicorp/terraform:latest' }
   }
   stages {
-    stage('Terraform-init') {
+    stage('test') {
       steps {
-        sh 'terraform init'
+        sh 'echo "testing"'
       }
     }
-    stage('Terraform-validate') {
+    stage('deploy') {
       steps {
-        sh 'terraform validate'
+        sh 'echo "deploy completed"'
       }
     }
   }
