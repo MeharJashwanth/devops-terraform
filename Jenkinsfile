@@ -1,6 +1,6 @@
 pipeline {
   agent{
-    docker { image 'hashicorp/terraform:latest' }
+    docker { image 'ubuntu:latest' }
   }
   stages {
     stage('test') {
